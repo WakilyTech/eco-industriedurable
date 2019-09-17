@@ -1,0 +1,10 @@
+
+    /**
+     * Relation "morph one" vers la table `{{relatedTable}}`.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\MorphOne
+     */
+    public function {{name}}()
+    {
+        return $this->morphOne(\{{relatedModel}}::class, '{{morphName}}');
+    }

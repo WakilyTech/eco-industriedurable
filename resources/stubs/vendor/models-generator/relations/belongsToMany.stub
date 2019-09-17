@@ -1,0 +1,10 @@
+
+    /**
+     * Relation "belongs to many" vers la table `{{relatedTable}}`.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
+    public function {{name}}()
+    {
+        return $this->belongsToMany(\{{relatedModel}}::class, '{{pivotTable}}', '{{foreignKey}}', '{{otherKey}}');
+    }

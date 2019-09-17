@@ -1,0 +1,10 @@
+
+    /**
+     * Relation "has one" vers la table `{{relatedTable}}`.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function {{name}}()
+    {
+        return $this->hasOne(\{{relatedModel}}::class, '{{foreignKey}}');
+    }

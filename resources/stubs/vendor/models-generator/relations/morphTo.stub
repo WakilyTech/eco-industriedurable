@@ -1,0 +1,10 @@
+
+    /**
+     * Relation "morph to".
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\MorphTo
+     */
+    public function {{name}}()
+    {
+        return $this->morphTo();
+    }
